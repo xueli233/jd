@@ -1,2 +1,16 @@
 1.块元素内的两行文字上下排列,居中.
 解决:放弃使用line-block属性,使用div+p;
+
+2.设置所以元素margin:0;padding:0;后宽属性不起效了.
+解决:不是不起效,只是原本的间隙没了.显示被压缩了.
+
+
+3.设置的背景图片不起效,检查路径没问题.
+解决:还是路径问题,因为引用了css文件,还粗心从默认index.html文件位置去找.
+
+4..special .special_d h5 第一个属性设计,后面.special .special_k之类的都无法生效了.
+解决:直接把class=".special_d"放到h5中,具体到标签中.
+
+5.ul li 中的h和p元素无法同行显示.
+解决:觉得white-space:nowrap;强制不换行可行,但是不起效果.
+要用float:left;才能同一行显示.
